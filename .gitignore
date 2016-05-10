@@ -34,3 +34,5 @@ node_modules
 
 # Parse configuration
 config.yml
+dashboard-config.yml
+server-config.yml

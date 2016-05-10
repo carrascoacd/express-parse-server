@@ -1,0 +1,8 @@
+apps:
+  serverURL: "http://localhost:33033/parse"
+  appId: "myAppId"
+  masterKey: "myMasterKey"
+  appName: "Aluxion Labs - Parse dashboard"
+users:
+  user: "user"
+  pass: "pass"

@@ -28,5 +28,5 @@ docker rmi [-f] <IMAGE ID>
 ```
 #### Run your image (remove the daemon option in order to check for launching errors -d)
 ```sh
-docker run -d -p 33033:33033 -v <path/to/your/config.yml>:/usr/src/app/config.yml <aluxion-labs>/express-parse-server
+docker run -d -p 33033:33033 -v <path/to/your/dashboard-config.yml>:/usr/src/app/dashboard-config.yml -v <path/to/your/server-config.yml>:/usr/src/app/server-config.yml <aluxion-labs>/express-parse-server
 ```
