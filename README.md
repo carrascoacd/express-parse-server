@@ -26,14 +26,6 @@ docker build -t <aluxion-labs>/express-parse-server .
 ```sh
 docker rmi [-f] <IMAGE ID>
 ```
-#### Save your image
-```sh
-docker save <CONTAINER ID> > latest.tar
-```
-#### Load your image
-```sh
-docker load < latest.tar
-```
 #### Run your image (remove the daemon option in order to check for launching errors -d)
 ```sh
 docker run -d -p 8080:8080 -v <path/to/your/config.yml>:/usr/src/app/config.yml <aluxion-labs>/express-parse-server
