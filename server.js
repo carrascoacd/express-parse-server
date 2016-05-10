@@ -12,7 +12,7 @@ try {
   app.use('/parse', api);
 
   app.listen(33033, function() {
-    console.log('parse-server-example running.');
+    console.log('parse-server running.');
   });
 } catch (e) {
   console.log(e);
