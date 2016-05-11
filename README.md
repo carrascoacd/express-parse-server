@@ -20,7 +20,7 @@ You need to specify a config.yml file in your host machine, then mount it when l
 ```
 #### Build your image
 ```sh
-docker build -t <aluxion-labs>/express-parse-server .
+docker build -t <username>/express-parse-server .
 ```
 #### Remove your image
 ```sh
@@ -28,5 +28,5 @@ docker rmi [-f] <IMAGE ID>
 ```
 #### Run your image (remove the daemon option in order to check for launching errors -d)
 ```sh
-docker run -d -p 33033:33033 -v <path/to/your/dashboard-config.yml>:/usr/src/app/dashboard-config.yml -v <path/to/your/server-config.yml>:/usr/src/app/server-config.yml <aluxion-labs>/express-parse-server
+docker run -d -p 33033:33033 -v <path/to/your/dashboard-config.yml>:/usr/src/app/dashboard-config.yml -v <path/to/your/server-config.yml>:/usr/src/app/server-config.yml <username>/express-parse-server
 ```
