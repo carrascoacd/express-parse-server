@@ -10,9 +10,8 @@ try {
   var api = new ParseServer(apiConfig);
   var dashboardConfig = yaml.safeLoad(fs.readFileSync('dashboard-config.yml', 'utf8'));
   // Use this flag if you are under a load balancer or proxy using https
-  // allowInsecureHTTP = 1
-  // var dashboard = new ParseDashboard(dashboardConfig, allowInsecureHTTP);
-  var dashboard = new ParseDashboard(dashboardConfig);
+  allowInsecureHTTP = 0
+  var dashboard = new ParseDashboard(dashboardConfig, allowInsecureHTTP);
   
   // Serve the Parse API on the /parse URL prefix
   app.use('/parse', api);
